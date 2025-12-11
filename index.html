@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUJU - Home</title>
+    <title> Nuju Ubosi- Home</title>
 
     <style>
-        * {
+    
+h1, h2 {
+    font-family: "Felix Titling", serif;
+}
+
+
+h3, h4 {
+    font-family: "Goudy Old Style", serif;
+}
+
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Felix Titling, Goudy Old Style, sans-serif;
             background-color: #000000;
             color: #ffffff;
             line-height: 1.6;
         }
 
-        /* GLOBAL IMAGE SLOT */
+
         .image-slot {
             width: 100%;
             height: 100%;
@@ -37,13 +47,13 @@
             object-fit: cover;
         }
 
-        /* 1200px centered container */
+      
         .container {
             width: 1200px;
             margin: 0 auto;
         }
 
-        /* Navigation */
+     
         nav {
             background-color: #1a1a1a;
             padding: 25px 0;
@@ -76,11 +86,22 @@
             text-transform: uppercase;
         }
 
+        nav a:link {
+            color: #ffffff;
+        }
+
+        nav a:visited {
+            color: #cccccc;
+        }
+
         nav a:hover {
             color: #888888;
         }
 
-        /* Hero Section */
+        nav a:active {
+            color: #666666;
+        }
+
         .hero {
             min-height: 100vh;
             display: flex;
@@ -120,6 +141,7 @@
         }
 
         .hero-roles span {
+            font-family: "Goudy Old Style", serif;
             font-size: 20px;
             color: #cccccc;
             padding-left: 20px;
@@ -137,7 +159,7 @@
             height: 450px;
         }
 
-        /* About Section */
+
         .about-section {
             padding: 100px 0;
             background-color: #000000;
@@ -185,7 +207,7 @@
             background-color: #0a0a0a;
         }
 
-        /* Values Section */
+    
         .values-section {
             padding: 100px 0;
             background-color: #000000;
@@ -212,7 +234,7 @@
             text-align: center;
         }
 
-        /* Hobbies Section */
+       
         .hobbies-section {
             padding: 100px 0;
             background-color: #000000;
@@ -246,7 +268,7 @@
             padding: 30px;
         }
 
-        /* Music Section */
+       
         .music-section {
             padding: 100px 0;
             background-color: #000000;
@@ -280,18 +302,128 @@
             padding: 50px;
             border: 2px solid #333333;
         }
+ .music-description h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+
+        .music-description p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #cccccc;
+        }
 
         .music-image {
+            background-color: #333333;
+            border: 2px solid #666666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #888888;
             min-height: 350px;
         }
 
-        /* Favorite Artist */
+
+  
+      
+        .favorite-artist {
+            background-color: #1a1a1a;
+            padding: 50px;
+            border: 2px solid #333333;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .favorite-artist h3 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .artist-showcase {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
         .artist-image {
             width: 200px;
             height: 200px;
+            background-color: #333333;
+            border: 3px solid #666666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #888888;
         }
 
-        /* Gallery Section */
+        .artist-info {
+           font-family: "Goudy Old Style", serif;
+            text-align: left;
+        }
+
+        .artist-info h4 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .artist-info p {
+            font-size: 16px;
+            color: #888888;
+        }
+
+        .essentials-section {
+            background-color: #1a1a1a;
+            padding: 50px;
+            border: 2px solid #333333;
+        }
+
+        .essentials-section h3 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .songs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .song-card {
+            background-color: #0a0a0a;
+            padding: 30px;
+            border: 2px solid #333333;
+            text-align: center;
+        }
+
+        .song-number {
+            font-size: 42px;
+            color: #888888;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .song-card h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .song-card p {
+            font-size: 14px;
+            color: #888888;
+            line-height: 1.5;
+        
+        }
+
         .gallery-section {
             padding: 100px 0;
             background-color: #000000;
@@ -305,6 +437,16 @@
             color: #ffffff;
         }
 
+        .gallery-intro {
+            text-align: center;
+            font-size: 16px;
+            color: #888888;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -312,18 +454,44 @@
         }
 
         .gallery-item {
+            background-color: #333333;
+            border: 2px solid #666666;
             aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #888888;
         }
 
         .gallery-item.large {
             grid-column: span 2;
             grid-row: span 2;
         }
-
         footer {
             background-color: #1a1a1a;
             padding: 40px 0;
             border-top: 2px solid #333333;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer p {
+            color: #888888;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #cccccc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
     </style>
@@ -333,7 +501,7 @@
 
     <nav>
         <div class="container">
-            <a href="index.html" class="logo">NUJU</a>
+            <a href="index.html" class="logo">NUJU UBOSI</a>
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#hobbies">HOBBIES</a></li>
@@ -343,12 +511,11 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+ 
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-text">
-                <h1>I'M NUJU</h1>
-                <p class="subtitle">A Brief Description About Myself</p>
+                <h1>HI! I'M NUJU</h1>
                 <div class="hero-roles">
                     <span>Student</span>
                     <span>Aspiring Designer</span>
@@ -366,24 +533,22 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="about-section">
         <div class="container">
             <div class="about-text">
                 <h2>ABOUT ME</h2>
-                <p>Welcome to my personal space on the web! I'm a passionate student currently pursuing my studies in design...</p>
-                <p>My background is rooted in a love for both the arts and athletics...</p>
-                <p>I believe in the power of continuous learning...</p>
+                <p>Welcome to my Website! I’ve loved art for as long as I can remember, and it’s guided me through every creative dream like interior design, architecture and finally web design.</p>
+                <p>My background is rooted in a love for both the arts and athletics and as a GBDA student, I’m learning how creativity becomes strategy, communication, and problem-solving.</p>
+                <p>I’m building a path where my passion for art turns into work that inspires.</p>
             </div>
 
             <div class="about-sidebar">
                 <h3>PERSONALITY</h3>
-                <div class="quote">"a quote here"</div>
+                <div class="quote">"IT IS NEVER THAT SERIOUS"</div>
             </div>
         </div>
     </section>
 
-    <!-- VALUES -->
     <section class="values-section">
         <div class="container">
             <h2>V A L U E S</h2>
@@ -391,21 +556,20 @@
             <div class="values-grid">
                 <div class="value-item">
                     <h3>VALUE 1</h3>
-                    <p>Description...</p>
+                    <p>HONESTY</p>
                 </div>
                 <div class="value-item">
                     <h3>VALUE 2</h3>
-                    <p>Description...</p>
+                    <p>ACCOUNTABILITY</p>
                 </div>
                 <div class="value-item">
                     <h3>VALUE 3</h3>
-                    <p>Description...</p>
+                    <p>INDEPENDENCE</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- HOBBIES -->
     <section id="hobbies" class="hobbies-section">
         <div class="container">
             <h2>H O B B I E S</h2>
@@ -414,31 +578,31 @@
 
                 <div class="hobby-card">
                     <div class="hobby-image image-slot">
-                        <img src="images/basketball.jpg" alt="Basketball">
+                        <img src="footballimg.jpg" alt="Football">
                     </div>
                     <div class="hobby-content">
-                        <h3>Basketball & Football</h3>
-                        <p>Description...</p>
+                        <h3>Football</h3>
+                      
                     </div>
                 </div>
 
                 <div class="hobby-card">
                     <div class="hobby-image image-slot">
-                        <img src="images/books.jpg" alt="Reading">
+                        <img src="books.jpg" alt="Reading">
                     </div>
                     <div class="hobby-content">
                         <h3>Reading</h3>
-                        <p>Description...</p>
+            
                     </div>
                 </div>
 
                 <div class="hobby-card">
                     <div class="hobby-image image-slot">
-                        <img src="images/friends.jpg" alt="Friends">
+                        <img src="painting.jpg" alt="Painting">
                     </div>
                     <div class="hobby-content">
-                        <h3>Friends</h3>
-                        <p>Description...</p>
+                        <h3>Painting</h3>
+                        
                     </div>
                 </div>
 
@@ -446,42 +610,42 @@
         </div>
     </section>
 
-    <!-- MUSIC -->
+
     <section id="music" class="music-section">
         <div class="container">
             <h2>MY AFROBEATS WORLD</h2>
-            <p class="music-subtitle">Where rhythm meets soul</p>
+            <p class="music-subtitle">"Music must awaken people to do their duty as citizens and act." - Fela Kuti</p>
 
             <div class="music-content">
                 <div class="music-description">
                     <h3>MY CONNECTION TO AFROBEATS</h3>
-                    <p>Description goes here...</p>
+                    <p>I feel at home listening to Afrobeats.  I grew up with this sound; it's more than music; it's my culture, my identity, and the beat of my native Nigeria.  The pulsating streets of Lagos, my home, and the immense pride I have as a member of a culture that has an impact on the entire globe are brought to life with each beat.  No matter where I am, Afrobeats always put me in touch with my roots and make me feel grounded and energized.  Everything about his music,the rhythms, the songs, the tales—transports me to a place of comfort and familiarity, where I can feel the love and acceptance of my family and the comforts of home.  As a Nigerian girl with boundless energy, imagination, and a heritage that follows me around like a flag, it inspires me, makes me feel better, and keeps me grounded in my identity.</p>
                 </div>
 
                 <div class="music-image image-slot">
-                    <img src="images/afrobeats.jpg" alt="Afrobeats Music">
+                    <img src="Afrobeats Music.jpg" alt="Afrobeats Music">
                 </div>
             </div>
 
-            <!-- FAVORITE ARTIST -->
+            
             <div class="favorite-artist">
                 <h3>Favourite Afrobeat's Artist</h3>
 
                 <div class="artist-showcase">
 
                     <div class="artist-image image-slot">
-                        <img src="images/artist.jpg" alt="Favorite Artist">
+                        <img src="ASAKE.jpg" alt="Favorite Artist">
                     </div>
 
                     <div class="artist-info">
-                        <h4>ARTIST NAME</h4>
-                        <p>Description...</p>
+                        <h4>ASAKE</h4>
+                        <p>Asake's music breathes life into every song by fusing Yoruba culture with urban sounds and strong choir-like layering.  He has a vibrant, soulful, and uniquely Nigerian sound.  His music seems like a joy of our origins because of the way he blends traditional elements with contemporary Afrobeats.</p>
                     </div>
 
                 </div>
             </div>
 
-            <!-- ESSENTIAL SONGS -->
+          
             <div class="essentials-section">
                 <h3>E S S E N T I A L S</h3>
 
@@ -489,68 +653,68 @@
                     <div class="song-card">
                         <div class="song-number">01</div>
                         <h4>Song 1:</h4>
-                        <p>Description...</p>
+                        <p>DULL</p>
                     </div>
 
                     <div class="song-card">
                         <div class="song-number">02</div>
                         <h4>Song 2:</h4>
-                        <p>Description...</p>
+                        <p>OTOTO</p>
                     </div>
 
                     <div class="song-card">
                         <div class="song-number">03</div>
                         <h4>Song 3:</h4>
-                        <p>Description...</p>
+                        <p>Peace Be Unto You</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALLERY -->
+  
     <section id="gallery" class="gallery-section">
         <div class="container">
 
-            <h2>g a l l e r y</h2>
+            <h2> Camera Roll</h2>
             <p class="gallery-intro">A collection of moments and memories...</p>
 
             <div class="gallery-grid">
 
                 <div class="gallery-item large image-slot">
-                    <img src="images/photo1.jpg" alt="Gallery Photo">
+                    <img src="image1.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item image-slot">
-                    <img src="images/photo2.jpg" alt="Gallery Photo">
+                    <img src="image2.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item image-slot">
-                    <img src="images/photo3.jpg" alt="Gallery Photo">
+                    <img src="image3.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item image-slot">
-                    <img src="images/photo4.jpg" alt="Gallery Photo">
+                    <img src="image4.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item image-slot">
-                    <img src="images/photo5.jpg" alt="Gallery Photo">
+                    <img src="image5.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item image-slot">
-                    <img src="images/photo6.jpg" alt="Gallery Photo">
+                    <img src="image6.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item large image-slot">
-                    <img src="images/photo7.jpg" alt="Gallery Photo">
+                    <img src="image7.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item image-slot">
-                    <img src="images/photo8.jpg" alt="Gallery Photo">
+                    <img src="image99.jpg" alt="Gallery Photo">
                 </div>
 
                 <div class="gallery-item image-slot">
-                    <img src="images/photo9.jpg" alt="Gallery Photo">
+                    <img src="image9.jpg" alt="Gallery Photo">
                 </div>
 
             </div>
@@ -559,8 +723,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Nuju. All rights reserved.</p>
-            <p>Contact: <a href="mailto:nuju@uwaterloo.ca">nuju@uwaterloo.ca</a></p>
+            <p>Assignment 3 - Nuju Ubosi.</p>
+            <p>Contact: <a href="mailto:nubosi@uwaterloo.ca">nubosi@uwaterloo.ca</a></p>
         </div>
     </footer>
 
